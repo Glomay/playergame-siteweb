@@ -1,0 +1,82 @@
+@import "mixins";
+.contacts-footer{
+  background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url('../img-playergame/back2.jpg') 50% 0 no-repeat fixed;
+  margin: 0;
+  background-size: cover;
+  color: #fff;
+  h2{
+    text-align: center;
+  }
+  .form-contact{
+    input{
+      background-color: rgba(#000,0.7);
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      :-moz-placeholder{
+      }
+    }
+    #sujet{
+      width: 100%;
+    }
+    textarea{
+      background-color: rgba(#000,0.7);
+      height: auto;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+    }
+    button{
+      background-color: rgba(#000,0.7);
+      height: auto;
+      width: 100%;
+      margin: 10px 0;
+      border: solid 1px grey;
+    }
+  }
+  .contacts{
+    .social-media{
+
+      li{
+        a{
+          height: 50px;
+          width: 50px;
+          background-color: $noir_galerie;
+          color: #fff;
+          font-size: 20px;
+          line-height: 50px;
+        }
+        @include transition(0.4s);
+      }
+      li:hover{
+        a{
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.main-footer{
+  background-color: $noir_footer;
+  p{
+    color: #fff;
+    padding-top: 10px;
+  }
+  span{
+    float: right;
+    a{
+      font-size: 30px;
+      color: #fff;
+      @include transition(0.3s);
+      #digismile{
+        color: #f9f9f9;
+        font-size: 15px;
+      }
+    }
+    a:hover{
+      color: $orange;
+    }
+  }
+}

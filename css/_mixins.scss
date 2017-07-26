@@ -1,0 +1,21 @@
+@mixin transition($time){
+  transition: all $time ease-in-out;
+  -webkit-transition: all $time ease-in-out;
+  -o-transition: all $time ease-in-out;
+  -moz-transition: all $time ease-in-out;
+}
+
+@mixin transform($time){
+  transform: scale($time);
+  -ms-transform: scale($time);
+  -webkit-transform: scale($time);
+  -o-transform: scale($time);
+  -moz-transform: scale($time);
+}
+
+@mixin ombre($horizontal,$vertical,$degrade,$couleur){
+  -moz-box-shadow: $horizontal $vertical $degrade $couleur;
+  -webkit-box-shadow: $horizontal $vertical $degrade $couleur;
+  box-shadow: $horizontal $vertical $degrade $couleur;
+  -o-box-shadow: $horizontal $vertical $degrade $couleur;
+}

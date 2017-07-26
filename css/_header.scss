@@ -1,0 +1,41 @@
+.main-header{
+
+  background-color: #fff;
+  .nav-menu{
+    padding-top: 30px;
+    nav.navbar{
+      margin-bottom: 0;
+      button{
+        background-color: $noir_galerie;
+        span{
+          background-color: $orange;
+        }
+      }
+    }
+    .nav.navbar-nav{
+      float: right;
+      .dropdown-menu{
+        border: none;
+        box-shadow: none;
+      }
+      li{
+        a{
+          color: $noir_footer;
+          background: none;
+          @include transition(0.4s);
+          font-family: "sf_cartoonist_handbold", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
+          font-size: 17px;
+        }
+      }
+      a:hover, li.active a{
+        background: none;
+        position: relative;
+        color: $orange;
+      }
+    }
+  }
+  .social-media{
+    float: right;
+    line-height: 40px;
+  }
+}
