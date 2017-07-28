@@ -42,7 +42,7 @@ $(document).ready(function(){
 });
 
 
-
+/*Scroll on top*/
 
 jQuery(function() {
     jQuery('a.anchor[href*="#"]:not([href="#"])').click(function() {
@@ -58,3 +58,55 @@ jQuery(function() {
         }
     });
 });
+
+/********************************
+
+ back to top button
+
+ ********************************/
+var btt = jQuery('.btt');
+btt.on('click', function () {
+    jQuery('html, body').animate({
+        scrollTop:0
+    },800, function () {
+        btt.fadeOut();
+    });
+})
+jQuery(window).on('scroll', function () {
+    var self = jQuery(this),
+        height = self.height(),
+        top = self.scrollTop();
+
+    if(top > height){
+        if(!btt.is(':visible')){
+            btt.fadeIn();
+        }
+    }
+})
+
+/*isotope grid*/
+$('.grid').isotope({
+    // options
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+});
+
+/*owl-carouse*/
+
+$('.owl-carousel').owlCarousel({
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})

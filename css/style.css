@@ -9,11 +9,19 @@
   #slide1 .content {
     height: 175px !important; }
 
-  #slide2 .content {
-    bottom: 80px !important;
-    height: 100px !important; }
-    #slide2 .content .container p {
-      padding: 30px 10px !important; } }
+  #slide2 {
+    height: 600px !important; }
+    #slide2 .content {
+      bottom: 130px !important;
+      height: 80px !important; }
+      #slide2 .content .container p {
+        padding: 10px 5px !important; }
+
+  #slide7 {
+    height: 400px !important; } }
+@media (max-width: 768px) {
+  #slide5 .grid .grid-item {
+    width: 50% !important; } }
 @media (max-width: 1024px) {
   .main-header .nav-menu {
     padding-top: 40px !important; }
@@ -133,10 +141,10 @@
     height: 150px;
     width: 100%; }
     #slide2 .content .container {
-      background-color: rgba(255, 255, 255, 0.7); }
+      background-color: rgba(255, 255, 255, 0.7);
+      text-align: center; }
       #slide2 .content .container p {
-        text-align: center;
-        padding: 80px 40px; }
+        padding: 20px 40px 50px 40px !important; }
 
 #slide3 {
   background-color: #f58813;
@@ -145,13 +153,17 @@
   text-align: center;
   display: inline-block;
   width: 100%; }
-  #slide3 .frame {
-    position: relative; }
-    #slide3 .frame img {
+  #slide3 a .frame {
+    position: relative;
+    -moz-box-shadow: 8px 8px 10px #000;
+    -webkit-box-shadow: 8px 8px 10px #000;
+    box-shadow: 8px 8px 10px #000;
+    -o-box-shadow: 8px 8px 10px #000; }
+    #slide3 a .frame img {
       margin: auto;
       position: relative;
       z-index: 1; }
-    #slide3 .frame span {
+    #slide3 a .frame span {
       width: 100%;
       height: 100%;
       background-color: #000;
@@ -160,14 +172,31 @@
       top: 0;
       left: 0;
       z-index: 2;
+      display: block;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out; }
+    #slide3 a .frame i {
+      width: 100%;
+      height: 40px;
+      background-color: #000;
+      opacity: 0.7;
+      position: absolute;
+      top: 110px;
+      z-index: 3;
       display: block; }
+  #slide3 span:hover {
+    background-color: #000 !important;
+    opacity: 0.3 !important; }
   #slide3 p {
     color: #fff;
     position: relative;
-    top: 150px; }
+    top: 150px;
+    z-index: 4; }
 
 #slide4 {
-  background: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url("../img-playergame/back2.jpg") 50% 0 no-repeat fixed;
+  background: url("../img-playergame/need.jpg") 50% 0 no-repeat fixed;
   width: 100%;
   height: 100%;
   margin: 0;
@@ -214,16 +243,37 @@
 #slide5 {
   padding: 0;
   margin: 0;
-  background-color: #201c1b; }
-  #slide5 .galerie {
-    height: 100%;
-    text-align: center;
-    padding-bottom: 20px; }
-    #slide5 .galerie a {
-      color: #f58813; }
-  #slide5 img {
-    padding: 0;
-    margin: 0; }
+  background-color: #201c1b;
+  position: relative; }
+  #slide5 .titre {
+    text-align: center; }
+    #slide5 .titre a {
+      text-decoration: none; }
+      #slide5 .titre a h2 {
+        color: #f58813;
+        margin: 0;
+        padding: 10px 0; }
+      #slide5 .titre a i {
+        color: #f58813; }
+  #slide5 .grid .grid-item {
+    width: 20%; }
+    #slide5 .grid .grid-item span {
+      width: 100%;
+      height: 100%;
+      background-color: #f58813;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: block;
+      transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      -moz-transition: all 1s ease-in-out; }
+  #slide5 span:hover {
+    background-color: #f58813 !important;
+    opacity: 0.7 !important; }
 
 #slide6 {
   background-color: #f58813;
@@ -236,6 +286,12 @@
     float: right;
     font-size: 30px;
     color: #201c1b; }
+
+#slide7 {
+  height: 300px;
+  width: auto; }
+  #slide7 h2 {
+    text-align: center; }
 
 .main-header {
   background-color: #fff; }
@@ -260,7 +316,8 @@
         -o-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         font-family: "sf_cartoonist_handbold", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
-        font-size: 17px; }
+        font-size: 17px;
+        padding: 10px 5px; }
       .main-header .nav-menu .nav.navbar-nav a:hover, .main-header .nav-menu .nav.navbar-nav li.active a {
         background: none;
         position: relative;

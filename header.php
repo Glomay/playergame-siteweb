@@ -3,6 +3,7 @@
 <head>
     <title>PlayerGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="$orange">
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font-Awesome -->
@@ -28,19 +29,17 @@
     <!-- WARNING: Respond.js doesn't work if you view the page
     via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/
-html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/
-respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
 <header class="main-header">
     <div class="container-fluid">
         <div class="row">
+            <!--Logo-->
             <div class="col-sm-3">
-                <a href="#" id="main-logo1"> <img src="img-playergame/logo4.png" height="70"> </a>
+                <a href="#" id="main-logo1"> <img src="img-playergame/logo4.png" height="70" alt=""> </a>
             </div>
+            <!--Nav menu,menu bootstrap-->
             <div class="col-sm-6">
                 <div class="nav-menu">
                     <nav class="navbar" role="navigation">
@@ -52,7 +51,6 @@ respond.min.js"></script>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <!--<a class="navbar-brand" href="#">TutorialsPoint</a>-->
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
@@ -71,13 +69,14 @@ respond.min.js"></script>
                                 <li><a href="#">Mediatheque</a></li>
                                 <li><a href="#">Xchanges</a></li>
                                 <li><a href="#">Calendrier</a></li>
+                                <li><a href="#">Qui-sommes nous?</a></li>
                                 <li><a href="#contacts" class="anchor">Contacts</a></li>
                             </ul>
                         </div>
                     </nav>
                 </div>
             </div>
-            
+            <!--Boutons reseaux sociaux-->
             <div class="col-sm-3">
                 <ul class="social-media">
                     <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -89,3 +88,5 @@ respond.min.js"></script>
         </div>
     </div>
 </header>
+
+<!--Fin header-->

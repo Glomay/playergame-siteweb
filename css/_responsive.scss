@@ -23,17 +23,34 @@
   }
 
   #slide2{
+    height: 600px !important;
     .content{
-      bottom: 80px !important;
-      height: 100px !important;
+      bottom: 130px !important;
+      height: 80px !important;
       .container{
         p{
-          padding: 30px 10px !important;
+          padding: 10px 5px !important;
         }
       }
     }
   }
 
+
+
+  #slide7{
+    height: 400px !important;
+  }
+}
+
+
+@media(max-width: 768px) {
+  #slide5{
+    .grid{
+      .grid-item{
+        width: 50% !important;
+      }
+    }
+  }
 }
 
 
