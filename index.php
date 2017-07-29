@@ -2,6 +2,14 @@
 
 <!-- Premier slide accueil-->
 <div id="slide1">
+    <div class="grid">
+        <span></span>
+        <?php for ($i=1;$i<=40;$i++):?>
+        <div class="grid-item">
+            <img src="img-playergame/<?php echo $i;?>.jpg" alt="" class="img-responsive">
+        </div>
+        <?php endfor;?>
+    </div>
     <div class="content">
         <div class="container">
             <h1 class="pg-h1">LIBREVILLE GAMING</h1>
@@ -11,7 +19,7 @@
     </div>
 </div>
 
-<!-- Deuxieme slide -->
+<!-- Deuxieme slide Mini presentation -->
 <div id="slide2">
     <div class="content">
         <div class="container">
@@ -24,13 +32,13 @@
     </div>
 </div>
 
-<!-- Toisieme slide -->
+<!-- Toisieme slide Nos activites -->
 <div id="slide3">
     <div class="content">
         <div class="container">
             <h2 class="pg-h2">Nos activites</h2>
             <div class="col-sm-3">
-                <a href="">
+                <a href="lbvgaming.php">
                     <p>Libreville Gaming</p>
                     <div class="frame">
                         <img src="img-playergame/web5.jpg" alt="" class="img-responsive">
@@ -40,7 +48,7 @@
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="">
+                <a href="#">
                     <p>Biss Ngabu</p>
                     <div class="frame">
                         <img src="img-playergame/web6.jpg" alt="" class="img-responsive">
@@ -50,7 +58,7 @@
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="">
+                <a href="#">
                     <p>School Challenge</p>
                     <div class="frame">
                         <img src="img-playergame/web7.jpg" alt="" class="img-responsive">
@@ -60,7 +68,7 @@
                 </a>
             </div>
             <div class="col-sm-3">
-                <a href="">
+                <a href="#">
                     <p>Socialy</p>
                     <div class="frame">
                         <img src="img-playergame/web8.jpg" alt="" class="img-responsive">
@@ -73,7 +81,7 @@
     </div>
 </div>
 
-<!-- Quatrieme slide -->
+<!-- Quatrieme slide calendrier-->
 
 <div id="slide4">
     <div class="content">
@@ -110,7 +118,7 @@
     </div>
 </div>
 
-<!-- Cinquieme slide -->
+<!-- Cinquieme slide Galerie-->
 
 <div id="slide5">
     <div class="titre">
@@ -162,7 +170,9 @@
         </div>
     </div>
 </div>
-    
+
+
+<!-- Sixieme slide echanges -->
 
     <div id="slide6">
         <div class="content">
@@ -176,19 +186,14 @@
 
 
 
+<!-- Septieme slide logos sponsors -->
+
 <div class="main-carousel" id="slide7">
     <h2 class="pg-h2">Ils nous ont fait confiance</h2>
     <div class="owl-carousel owl-theme">
-        <div class="item"><img src="img-playergame/sponsor1.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor2.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor3.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor4.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor5.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor6.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor7.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor8.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor9.jpg" alt="" class="img-responsive"></div>
-        <div class="item"><img src="img-playergame/sponsor10.jpg" alt="" class="img-responsive"></div>
+        <?php for($i=1;$i<=12;$i++):?>
+        <div class="item"><img src="img-playergame/sponsor<?php echo $i;?>.jpg" alt="" class="img-responsive"></div>
+        <?php endfor;?>
     </div>
 </div>
 

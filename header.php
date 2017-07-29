@@ -54,13 +54,13 @@
                         </div>
                         <div class="collapse navbar-collapse" id="example-navbar-collapse">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Accueil</a></li>
+                                <li class="active"><a href="index.php">Accueil</a></li>
                                 <li class="dropdown">
                                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                         Nos Activites <span class="caret"></span>
                                     </a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Libreville Gaming</a></li>
+                                        <li><a href="lbvgaming.php">Libreville Gaming</a></li>
                                         <li><a href="#">Biss Ngabu</a></li>
                                         <li><a href="#">School Chalenge</a></li>
                                         <li><a href="#">Solialy</a></li>
@@ -69,7 +69,7 @@
                                 <li><a href="#">Mediatheque</a></li>
                                 <li><a href="#">Xchanges</a></li>
                                 <li><a href="#">Calendrier</a></li>
-                                <li><a href="#">Qui-sommes nous?</a></li>
+                                <li><a href="presentation.php">Le projet</a></li>
                                 <li><a href="#contacts" class="anchor">Contacts</a></li>
                             </ul>
                         </div>

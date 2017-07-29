@@ -91,6 +91,7 @@ $('.grid').isotope({
     layoutMode: 'fitRows'
 });
 
+
 /*owl-carouse*/
 
 $('.owl-carousel').owlCarousel({

@@ -40,10 +40,29 @@
   #slide7{
     height: 400px !important;
   }
+  #slidepre2{
+    height: 600px !important;
+    .content{
+      bottom: 130px !important;
+      height: 465px !important;
+      p{
+        p{
+          padding: 10px 5px !important;
+        }
+      }
+    }
+  }
 }
 
 
 @media(max-width: 768px) {
+  #slide1{
+    .grid{
+      .grid-item{
+        width: 20% !important;
+      }
+    }
+  }
   #slide5{
     .grid{
       .grid-item{

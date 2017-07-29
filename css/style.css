@@ -18,8 +18,19 @@
         padding: 10px 5px !important; }
 
   #slide7 {
-    height: 400px !important; } }
+    height: 400px !important; }
+
+  #slidepre2 {
+    height: 600px !important; }
+    #slidepre2 .content {
+      bottom: 130px !important;
+      height: 465px !important; }
+      #slidepre2 .content p p {
+        padding: 10px 5px !important; } }
 @media (max-width: 768px) {
+  #slide1 .grid .grid-item {
+    width: 20% !important; }
+
   #slide5 .grid .grid-item {
     width: 50% !important; } }
 @media (max-width: 1024px) {
@@ -99,34 +110,43 @@
     .main-footer span a:hover {
       color: #f58813; }
 
-#slide1 {
+#slide1 .grid {
+  position: fixed;
+  z-index: 1; }
+  #slide1 .grid span {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block; }
+  #slide1 .grid .grid-item {
+    width: 10%; }
+#slide1 .content {
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 250px;
+  height: 150px;
   width: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../img-playergame/back1.jpg") 50% 0 no-repeat fixed;
-  height: 600px;
-  margin: 0;
-  padding: 200px 0 260px 0;
-  background-size: cover; }
-  #slide1 .content {
-    background-color: rgba(255, 255, 255, 0.4);
-    position: relative;
-    top: 0px;
-    height: 150px;
-    width: 100%; }
-    #slide1 .content h1 {
-      margin-top: 0;
-      padding: 5px 5px 0 5px;
-      font-family: "silkscreenbold", Verdana, sans-serif; }
-    #slide1 .content P {
-      padding: 0 5px;
-      margin: 0 0 10px; }
-    #slide1 .content button {
-      background-color: #f58813;
-      color: #fff;
-      height: auto;
-      width: 100px;
-      margin: 10px 0;
-      border: none;
-      padding: 5px; }
+  z-index: 5; }
+  #slide1 .content h1 {
+    margin-top: 0;
+    padding: 5px 5px 0 5px;
+    font-family: "silkscreenbold", Verdana, sans-serif; }
+  #slide1 .content P {
+    padding: 0 5px;
+    margin: 0 0 10px; }
+  #slide1 .content button {
+    background-color: #f58813;
+    color: #fff;
+    height: auto;
+    width: 100px;
+    margin: 10px 0;
+    border: none;
+    padding: 5px; }
 
 #slide2 {
   background: url("../img-playergame/back2.jpg") 50% 0 no-repeat fixed;
@@ -153,39 +173,41 @@
   text-align: center;
   display: inline-block;
   width: 100%; }
-  #slide3 a .frame {
-    position: relative;
-    -moz-box-shadow: 8px 8px 10px #000;
-    -webkit-box-shadow: 8px 8px 10px #000;
-    box-shadow: 8px 8px 10px #000;
-    -o-box-shadow: 8px 8px 10px #000; }
-    #slide3 a .frame img {
-      margin: auto;
+  #slide3 a {
+    text-decoration: none; }
+    #slide3 a .frame {
       position: relative;
-      z-index: 1; }
-    #slide3 a .frame span {
-      width: 100%;
-      height: 100%;
-      background-color: #000;
-      opacity: 0.7;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
-      display: block;
-      transition: all 1s ease-in-out;
-      -webkit-transition: all 1s ease-in-out;
-      -o-transition: all 1s ease-in-out;
-      -moz-transition: all 1s ease-in-out; }
-    #slide3 a .frame i {
-      width: 100%;
-      height: 40px;
-      background-color: #000;
-      opacity: 0.7;
-      position: absolute;
-      top: 110px;
-      z-index: 3;
-      display: block; }
+      -moz-box-shadow: 8px 8px 10px #000;
+      -webkit-box-shadow: 8px 8px 10px #000;
+      box-shadow: 8px 8px 10px #000;
+      -o-box-shadow: 8px 8px 10px #000; }
+      #slide3 a .frame img {
+        margin: auto;
+        position: relative;
+        z-index: 1; }
+      #slide3 a .frame span {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: block;
+        transition: all 1s ease-in-out;
+        -webkit-transition: all 1s ease-in-out;
+        -o-transition: all 1s ease-in-out;
+        -moz-transition: all 1s ease-in-out; }
+      #slide3 a .frame i {
+        width: 100%;
+        height: 40px;
+        background-color: #000;
+        opacity: 0.7;
+        position: absolute;
+        top: 110px;
+        z-index: 3;
+        display: block; }
   #slide3 span:hover {
     background-color: #000 !important;
     opacity: 0.3 !important; }
@@ -317,7 +339,7 @@
         -moz-transition: all 0.4s ease-in-out;
         font-family: "sf_cartoonist_handbold", "Lato", "Helvetica", Helvetica, Arial, sans-serif;
         font-size: 17px;
-        padding: 10px 5px; }
+        padding: 10px 7px; }
       .main-header .nav-menu .nav.navbar-nav a:hover, .main-header .nav-menu .nav.navbar-nav li.active a {
         background: none;
         position: relative;
@@ -330,7 +352,7 @@ body, html {
   margin: 0;
   padding: 0;
   width: 100%; }
-  body h2, html h2 {
+  body h1, body h2, html h1, html h2 {
     font-family: "silkscreenbold", Verdana, sans-serif; }
   body p, body h3, body h4, body h5, body h6, body a, body span, body i, html p, html h3, html h4, html h5, html h6, html a, html span, html i {
     font-family: "open_sansregular", Helvetica, Arial, sans-serif; }
@@ -362,5 +384,122 @@ body, html {
     background-color: #201c1b;
     position: relative;
     color: #f58813; }
+
+#background {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-playergame/web2.png") 50% 0 no-repeat fixed;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover; }
+  #background .content {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 250px;
+    height: 60px;
+    width: 100%;
+    z-index: 5; }
+    #background .content h1 {
+      margin-top: 0;
+      text-align: center;
+      padding: 5px 5px 0 5px;
+      font-family: "silkscreenbold", Verdana, sans-serif; }
+
+.content span {
+  font-weight: bolder; }
+  .content span i {
+    color: #f58813; }
+
+#slidepre1 h2 {
+  text-align: center;
+  padding: 10px 0; }
+
+#slidepre2 {
+  background: url("../img-playergame/cover.jpg") 50% 0 no-repeat fixed;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover; }
+  #slidepre2 .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 80px;
+    height: 225px;
+    width: 100%;
+    z-index: 5;
+    margin: auto; }
+    #slidepre2 .content p {
+      color: #fff; }
+    #slidepre2 .content h2 {
+      text-align: center;
+      padding: 10px 0;
+      color: #f58813; }
+
+#slidepre3 h2 {
+  text-align: center;
+  padding: 10px 0; }
+
+#background-lbv {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img-playergame/logo3.png") 50% 0 no-repeat fixed;
+  width: 100%;
+  height: 300px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover; }
+  #background-lbv .content {
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    top: 250px;
+    height: 75px;
+    width: 100%;
+    z-index: 5; }
+    #background-lbv .content h1 {
+      margin-top: 0;
+      text-align: center;
+      padding: 5px 5px 0 5px;
+      font-family: "silkscreenbold", Verdana, sans-serif; }
+
+#slidelbv1 h2 {
+  text-align: center;
+  padding: 10px 0; }
+
+#slidelbv2 {
+  background: url("../img-playergame/cover.jpg") 50% 0 no-repeat fixed;
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover; }
+  #slidelbv2 .content {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 80px;
+    height: 225px;
+    width: 100%;
+    z-index: 5;
+    margin: auto; }
+    #slidelbv2 .content p {
+      color: #fff;
+      text-align: center; }
+    #slidelbv2 .content h2 {
+      text-align: center;
+      padding: 10px 0;
+      color: #f58813; }
+    #slidelbv2 .content h3 {
+      text-align: center;
+      color: #f58813;
+      font-weight: bold; }
+
+#slidelbv3 h2 {
+  text-align: center;
+  padding: 10px 0; }
+#slidelbv3 h4 {
+  color: #f58813;
+  font-weight: bold; }
+#slidelbv3 i {
+  font-weight: bold; }
+#slidelbv3 p {
+  font-size: small; }
 
 /*# sourceMappingURL=style.css.map */
