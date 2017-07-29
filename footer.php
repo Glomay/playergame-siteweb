@@ -49,9 +49,9 @@
                         +241 07 41 73 97 / 04 44 70 31<br>
                         playergamegabon@gmail.com</p>
                     <ul class="social-media">
-                        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/playergame241" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.twitter.com/playergamegabon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/playergabongame" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
                     </ul>
                 </div>
