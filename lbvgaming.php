@@ -68,10 +68,6 @@
                     <i>16h45</i>: Remise des lots <br>
                     <i>17h00</i>: Fin de l’événement.</p>
             </div>
-            <p>P.s. : * Les animations et présentation des produits et services des partenaires se feront 
-                pendant toute la durée du tournoi. *PlayerGame ayant une connotation sociale, nous proje-
-                tons de faire une collecte pendant les deux afin de pouvoir acheter un console de jeu ou un 
-                ordinateur pour faire don dans un orphelinat.</p>
         </div>
     </div>
 </div>

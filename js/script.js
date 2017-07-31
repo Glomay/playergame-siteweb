@@ -111,3 +111,4 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+

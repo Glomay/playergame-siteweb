@@ -1,24 +1,23 @@
 <?php include "header.php"?>
 
 <!-- Premier slide accueil-->
-<div id="slide1">
-    <div class="grid">
-        <span></span>
-        <?php for ($i=1;$i<=40;$i++):?>
-        <div class="grid-item">
-            <img src="img-playergame/<?php echo $i;?>.jpg" alt="" class="img-responsive">
+    <div id="slide1">
+        <div class="grid">
+            <span></span>
+            <?php for ($i=1;$i<=40;$i++):?>
+                <div class="grid-item">
+                    <img src="img-playergame/<?php echo $i;?>.jpg" alt="" class="img-responsive">
+                </div>
+            <?php endfor;?>
         </div>
-        <?php endfor;?>
-    </div>
-    <div class="content">
-        <div class="container">
-            <h1 class="pg-h1">LIBREVILLE GAMING</h1>
-            <p>Du 10 au 11 Aout 2017</p>
-            <button class="submit" type="submit">En savoir plus</button>
+        <div class="content">
+            <div class="container">
+                <h1 class="pg-h1">LIBREVILLE GAMING</h1>
+                <p>Du 11 au 12 Aout 2017</p>
+                <button class="submit" type="submit">En savoir plus</button>
+            </div>
         </div>
     </div>
-</div>
-
 <!-- Deuxieme slide Mini presentation -->
 <div id="slide2">
     <div class="content">
@@ -122,7 +121,7 @@
 
 <div id="slide5">
     <div class="titre">
-        <a href="#">
+        <a href="galerie.php">
             <h2 class="pg-h2">PlayerGame en images</h2>
             <i>Toutes les photos ›</i>
         </a>
@@ -179,7 +178,7 @@
             <div class="container">
                 <h2 class="pg-h2">Xchanges</h2>
                 <p>Votre espace d'exposition,de vente,de promotion de vos produits et services dans le domaine du digital et du numerique.</p>
-                <a href="#"><i class="fa fa-long-arrow-right"></i></a>
+                <a href="exchange.php"><i class="fa fa-long-arrow-right"></i></a>
             </div>
         </div>
     </div>

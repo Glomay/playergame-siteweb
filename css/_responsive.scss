@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 @media(max-width :767px){
   .main-header{
@@ -35,8 +36,6 @@
     }
   }
 
-
-
   #slide7{
     height: 400px !important;
   }
@@ -52,6 +51,7 @@
       }
     }
   }
+
 }
 
 

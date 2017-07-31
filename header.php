@@ -37,7 +37,7 @@
         <div class="row">
             <!--Logo-->
             <div class="col-sm-3">
-                <a href="#" id="main-logo1"> <img src="img-playergame/logo4.png" height="70" alt=""> </a>
+                <a href="index.php" id="main-logo1"> <img src="img-playergame/logo4.png" height="70" alt=""> </a>
             </div>
             <!--Nav menu,menu bootstrap-->
             <div class="col-sm-6">
@@ -66,9 +66,9 @@
                                         <li><a href="#">Solialy</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">Mediatheque</a></li>
-                                <li><a href="#">Xchanges</a></li>
-                                <li><a href="#">Calendrier</a></li>
+                                <li><a href="galerie.php">Mediatheque</a></li>
+                                <li><a href="exchange.php">Xchanges</a></li>
+                                <li><a href="calendrier.php">Calendrier</a></li>
                                 <li><a href="presentation.php">Le projet</a></li>
                                 <li><a href="#contacts" class="anchor">Contacts</a></li>
                             </ul>

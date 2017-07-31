@@ -1,5 +1,8 @@
 @import "mixins";
+
 #slide1{
+  height: 550px;
+  overflow: hidden;
   .grid{
     position: fixed;
     z-index: 1;

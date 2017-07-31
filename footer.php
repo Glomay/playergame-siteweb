@@ -43,7 +43,7 @@
                 </div>
                 <!--Logo,contacts,reseaux sociaux-->
                 <div class="col-sm-4 col-sm-push-1 contacts">
-                    <a href="#" id="main-logo2"> <img src="img-playergame/logo4.png" height="60"> </a>
+                    <a href="index.php" id="main-logo2"> <img src="img-playergame/logo4.png" height="60"> </a>
                     <h4 class="ph-h4">Contacts</h4>
                     <p>
                         +241 07 41 73 97 / 04 44 70 31<br>

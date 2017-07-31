@@ -110,43 +110,46 @@
     .main-footer span a:hover {
       color: #f58813; }
 
-#slide1 .grid {
-  position: fixed;
-  z-index: 1; }
-  #slide1 .grid span {
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.7;
+#slide1 {
+  height: 550px;
+  overflow: hidden; }
+  #slide1 .grid {
+    position: fixed;
+    z-index: 1; }
+    #slide1 .grid span {
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      opacity: 0.7;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      display: block; }
+    #slide1 .grid .grid-item {
+      width: 10%; }
+  #slide1 .content {
+    background-color: rgba(255, 255, 255, 0.4);
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    display: block; }
-  #slide1 .grid .grid-item {
-    width: 10%; }
-#slide1 .content {
-  background-color: rgba(255, 255, 255, 0.4);
-  position: absolute;
-  top: 250px;
-  height: 150px;
-  width: 100%;
-  z-index: 5; }
-  #slide1 .content h1 {
-    margin-top: 0;
-    padding: 5px 5px 0 5px;
-    font-family: "silkscreenbold", Verdana, sans-serif; }
-  #slide1 .content P {
-    padding: 0 5px;
-    margin: 0 0 10px; }
-  #slide1 .content button {
-    background-color: #f58813;
-    color: #fff;
-    height: auto;
-    width: 100px;
-    margin: 10px 0;
-    border: none;
-    padding: 5px; }
+    top: 250px;
+    height: 150px;
+    width: 100%;
+    z-index: 5; }
+    #slide1 .content h1 {
+      margin-top: 0;
+      padding: 5px 5px 0 5px;
+      font-family: "silkscreenbold", Verdana, sans-serif; }
+    #slide1 .content P {
+      padding: 0 5px;
+      margin: 0 0 10px; }
+    #slide1 .content button {
+      background-color: #f58813;
+      color: #fff;
+      height: auto;
+      width: 100px;
+      margin: 10px 0;
+      border: none;
+      padding: 5px; }
 
 #slide2 {
   background: url("../img-playergame/back2.jpg") 50% 0 no-repeat fixed;
@@ -344,6 +347,8 @@
         background: none;
         position: relative;
         color: #f58813; }
+      .main-header .nav-menu .nav.navbar-nav a:active {
+        color: #f58813; }
   .main-header .social-media {
     float: right;
     line-height: 40px; }
@@ -499,7 +504,86 @@ body, html {
   font-weight: bold; }
 #slidelbv3 i {
   font-weight: bold; }
-#slidelbv3 p {
-  font-size: small; }
+
+#slide {
+  background-color: #201c1b; }
+  #slide img {
+    padding: 40px 0 10px 0;
+    transition: all 1.5s ease-in-out;
+    -webkit-transition: all 1.5s ease-in-out;
+    -o-transition: all 1.5s ease-in-out;
+    -moz-transition: all 1.5s ease-in-out; }
+  #slide img:last-child {
+    filter: blur(2px) !important;
+    opacity: 0.7; }
+  #slide img:hover {
+    transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    filter: blur(0) !important;
+    opacity: 1; }
+  #slide h2 {
+    text-align: center;
+    color: #f58813; }
+
+.content-cal {
+  background-color: #201c1b; }
+  .content-cal h2 {
+    text-align: center;
+    color: #f58813; }
+  .content-cal .zoom .calendrier {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    padding: 15px 20px 25px 20px;
+    margin-bottom: 30px; }
+    .content-cal .zoom .calendrier h5 {
+      color: #f58813; }
+    .content-cal .zoom .calendrier button {
+      float: right;
+      background-color: #f58813;
+      color: #fff;
+      height: auto;
+      width: 100px;
+      margin: 10px 0;
+      border: none;
+      padding: 5px;
+      position: relative;
+      bottom: 20px; }
+
+.content-ex {
+  background-color: #201c1b; }
+  .content-ex h2 {
+    text-align: center;
+    color: #f58813; }
+  .content-ex .content {
+    padding: 20px 0; }
+    .content-ex .content .photo {
+      position: relative; }
+      .content-ex .content .photo span {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        display: block; }
+    .content-ex .content .texte {
+      color: #fff; }
+      .content-ex .content .texte h4 {
+        color: #f58813; }
+      .content-ex .content .texte button {
+        float: right;
+        background-color: #f58813;
+        color: #fff;
+        height: auto;
+        width: 100px;
+        margin: 10px 0;
+        border: none;
+        padding: 5px;
+        position: relative;
+        bottom: 20px; }
 
 /*# sourceMappingURL=style.css.map */
