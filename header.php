@@ -3,7 +3,11 @@
 <head>
     <title>PlayerGame</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="$orange">
+    <meta name="theme-color" content="#f58813">
+    <meta property="og:title" content="PlayerGame" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="http://http://www.playergame.ga" />
+    <meta property="og:image" content="http://http://http://www.playergame.ga/img-playergame/logo4.png" />
     <!-- Bootstrap -->
     <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font-Awesome -->
